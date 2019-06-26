@@ -57,8 +57,8 @@ if [ ${UBUNTU_VER} = '14.04' ] || [ ${UBUNTU_VER} = '16.04' ]; then
     sudo apt-get install -y --no-install-recommends libboost-all-dev libboost-python-dev
 elif [ ${UBUNTU_VER} = '18.04' ]; then
     # Install boost 1.58 from source
-    BOOST_SRC_DIR=~/git/boost_1_58_0
-    mkdir -p ~/git; cd ~/git
+    BOOST_SRC_DIR=~/8_git/boost_1_58_0
+    mkdir -p ~/8_git; cd ~/8_git
     wget https://vorboss.dl.sourceforge.net/project/boost/boost/1.58.0/boost_1_58_0.tar.gz -O ${BOOST_SRC_DIR}.tar.gz
     tar -xzf ${BOOST_SRC_DIR}.tar.gz
     cd ${BOOST_SRC_DIR}

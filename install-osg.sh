@@ -20,8 +20,8 @@ echo ""
 echo "Installing OpenSceneGraph 3.4 from source (Commit ${OSG_COMMIT})..."
 echo ""
 
-mkdir -p ~/git; cd ~/git
-git clone https://github.com/openscenegraph/OpenSceneGraph.git
+mkdir -p ~/8_git; cd ~/8_git
+git clone git@github.com:openscenegraph/OpenSceneGraph.git
 cd OpenSceneGraph; git reset --hard ${OSG_COMMIT}
 mkdir build; cd build
 

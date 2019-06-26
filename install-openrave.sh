@@ -25,8 +25,8 @@ RAVE_COMMIT=7c5f5e27eec2b2ef10aa63fbc519a998c276f908
 echo ""
 echo "Installing OpenRAVE 0.9 from source (Commit ${RAVE_COMMIT})..."
 echo ""
-mkdir -p ~/git; cd ~/git
-git clone https://github.com/rdiankov/openrave.git
+mkdir -p ~/8_git; cd ~/8_git
+git clone git@github.com:rdiankov/openrave.git
 cd openrave; git reset --hard ${RAVE_COMMIT}
 mkdir build; cd build
 if [ ${UBUNTU_VER} = '14.04' ] || [ ${UBUNTU_VER} = '16.04' ]; then

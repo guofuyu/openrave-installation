@@ -18,8 +18,8 @@ fi
 echo ""
 echo "Installing FCL 0.5.0 from source..."
 echo ""
-mkdir -p ~/git; cd ~/git
-git clone https://github.com/flexible-collision-library/fcl
+mkdir -p ~/8_git; cd ~/8_git
+git clone git@github.com:flexible-collision-library/fcl
 cd fcl; git reset --hard 0.5.0
 mkdir build; cd build
 cmake ..
